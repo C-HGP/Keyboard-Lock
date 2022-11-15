@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KBL));
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.LockKB = new System.Windows.Forms.RadioButton();
+            this.UnlockKB = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,34 +48,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Keyboard Lock Tool";
             // 
-            // radioButton1
+            // LockKB
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 43);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(97, 17);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Lock Keyboard";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.LockKB.AutoSize = true;
+            this.LockKB.Location = new System.Drawing.Point(6, 43);
+            this.LockKB.Name = "LockKB";
+            this.LockKB.Size = new System.Drawing.Size(97, 17);
+            this.LockKB.TabIndex = 3;
+            this.LockKB.TabStop = true;
+            this.LockKB.Text = "Lock Keyboard";
+            this.LockKB.UseVisualStyleBackColor = true;
+            this.LockKB.CheckedChanged += new System.EventHandler(this.lockKB_CheckedChanged);
             // 
-            // radioButton2
+            // UnlockKB
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 66);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(107, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Unlock Keyboard";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.UnlockKB.AutoSize = true;
+            this.UnlockKB.Location = new System.Drawing.Point(6, 66);
+            this.UnlockKB.Name = "UnlockKB";
+            this.UnlockKB.Size = new System.Drawing.Size(107, 17);
+            this.UnlockKB.TabIndex = 2;
+            this.UnlockKB.TabStop = true;
+            this.UnlockKB.Text = "Unlock Keyboard";
+            this.UnlockKB.UseVisualStyleBackColor = true;
+            this.UnlockKB.CheckedChanged += new System.EventHandler(this.unlockKB_CheckedChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.LockKB);
+            this.groupBox1.Controls.Add(this.UnlockKB);
             this.groupBox1.Location = new System.Drawing.Point(57, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
@@ -83,12 +83,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select State: ";
             // 
-            // textBox1
+            // TextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 175);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 1;
+            this.TextBox.Location = new System.Drawing.Point(57, 175);
+            this.TextBox.Name = "TextBox";
+            this.TextBox.Size = new System.Drawing.Size(200, 20);
+            this.TextBox.TabIndex = 1;
             // 
             // KBL
             // 
@@ -97,7 +97,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(344, 196);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TextBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -114,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton LockKB;
+        private System.Windows.Forms.RadioButton UnlockKB;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TextBox;
     }
 }
 
